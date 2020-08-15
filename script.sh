@@ -29,10 +29,27 @@ askForWay() {
   route=$HOME"/"$way
 
   if [ -e "$route" ]; then
-    echo All right
+    askForName
   else
     echo -e "Invalid path..."
     askForWay
+  fi
+}
+
+askForName() {
+  read -p "What is the name of the project to be created?: " name
+  path=$route"/"$name
+
+  if [ -e "$path" ]; then
+    echo -e "\r\nThis directory already exists! Choose another name ..."
+    askForName
+  else
+    read -n1 -p "The project path will be this: \"$path\" [y/n]: " confirmation
+    case $confirmation in
+      Y | y) echo -e "\r\nconfirm";;
+      N | n) echo -e "\r\nOperation interrupted :-("; exit 0;;
+      *) echo -e "\r\nInvalid Operation!"; askForName;;
+    esac
   fi
 }
 
