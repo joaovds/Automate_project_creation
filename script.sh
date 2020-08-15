@@ -67,7 +67,7 @@ typeOfProject() {
 
   case $project in
     1) createNodeProject;;
-    2) echo node ts;;
+    2) createNodeProjectWithTS;;
     3) echo react;;
     4) echo react ts;;
     *) echo -e "\033[01;31m\r\nOpção Inválida"; typeOfProject;;
@@ -88,6 +88,37 @@ createNodeProject() {
   echo -e "\r\n\033[01;32mAdd the following code to \"package.json\":
   \"scripts\": {
     \"start\": \"nodemon ./src/server.js\"
+  },
+  "
+}
+
+createNodeProjectWithTS() {
+  mkdir $path
+  cd $path
+  yarn init -y
+  yarn add express
+  yarn add typescript ts-node-dev -D
+  mkdir src
+  touch src/server.ts
+  touch tsconfig.json
+
+  createGitignoreNode
+
+echo '{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true                            
+  }
+}' >> tsconfig.json
+
+  echo -e "\r\n\033[01;32mAdd the following code to \"package.json\":
+  \"scripts\": {
+    \"start\": \"tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts\"
   },
   "
 }
