@@ -66,12 +66,30 @@ typeOfProject() {
   read -n1 -p "|--> " project
 
   case $project in
-    1) echo node;;
+    1) createNodeProject;;
     2) echo node ts;;
     3) echo react;;
     4) echo react ts;;
     *) echo -e "\033[01;31m\r\nOpção Inválida"; typeOfProject;;
   esac
+}
+
+createNodeProject() {
+  mkdir $path
+  cd $path
+  yarn init -y
+  yarn add express
+  yarn add nodemon -D
+  mkdir src
+  touch src/server.js
+
+  createGitignoreNode
+
+  echo -e "\r\n\033[01;32mAdd the following code to \"package.json\":
+  \"scripts\": {
+    \"start\": \"nodemon ./src/server.js\"
+  },
+  "
 }
 
 createGitignoreNode() {
@@ -192,8 +210,7 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
-.pnp.*
-  "
+.pnp.*" >> .gitignore
 }
 
 if [[ "$1"  ]]; then
