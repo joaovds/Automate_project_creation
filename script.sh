@@ -68,7 +68,7 @@ typeOfProject() {
   case $project in
     1) createNodeProject;;
     2) createNodeProjectWithTS;;
-    3) echo react;;
+    3) createReactJsProject;;
     4) echo react ts;;
     *) echo -e "\033[01;31m\r\nOpção Inválida"; typeOfProject;;
   esac
@@ -121,6 +121,14 @@ echo '{
     \"start\": \"tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts\"
   },
   "
+}
+
+createReactJsProject() {
+  cd $route
+  yarn create react-app $name
+  rm README.md
+
+  echo -e "\r\n\033[01;32mSuccessfully created! :-)"
 }
 
 createGitignoreNode() {
