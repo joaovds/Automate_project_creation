@@ -125,8 +125,7 @@ echo '{
 
 createGitignoreNode() {
   touch .gitignore
-  echo "
-# Logs
+  echo "# Logs
 logs
 *.log
 npm-debug.log*
