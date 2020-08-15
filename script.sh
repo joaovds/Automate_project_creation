@@ -11,3 +11,16 @@ for i in ${deps[@]}; do
   fi
 done
 
+usage() {
+  cat <<EOF
+
+    Project creation - NodeJS, ReactJS ...
+
+    -h, --help      Show help
+    -v, --version   Show version
+
+    * Version 1.0
+
+EOF
+}
+
