@@ -29,6 +29,25 @@
 
 <h2 id="installation">Installation</h2>
 
+Cloning the Repository
+
+```sh
+$ git clone https://github.com/joaovds/Automate_project_creation.git
+$ cd Automate_project_creation
+```
+
+Give script execution permission
+
+```sh
+$ chmod 755 script.sh
+```
+
+Run the script
+
+```sh
+$ ./script.sh
+```
+
 <h2 id="howtouse">How to use</h2>
 
 <h2 id="contributing">Contributing</h2>
