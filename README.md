@@ -111,7 +111,7 @@ Now choose the type of project you want to create and that's it! Your project wi
 
 <img src="https://avatars1.githubusercontent.com/u/50719694?s=460&u=bb76946310cdf551631974d9acf4f55306a44db6&v=4" width="30%">
 
-Made by: [**João Victor**](https://github.com/joaovds)
+Made by: [**João Victor**](https://github.com/joaovds) </br>
 <a href="https://twitter.com/joaovds07">
 ![Twitter](https://img.shields.io/static/v1?label=Twitter&message=@joaovds07&color=blue&style=flat&logo=twitter)
 </a>
