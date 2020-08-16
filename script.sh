@@ -69,7 +69,7 @@ typeOfProject() {
     1) createNodeProject;;
     2) createNodeProjectWithTS;;
     3) createReactJsProject;;
-    4) echo react ts;;
+    4) createReactProjectWithTS;;
     *) echo -e "\033[01;31m\r\nOpção Inválida"; typeOfProject;;
   esac
 }
@@ -126,7 +126,13 @@ echo '{
 createReactJsProject() {
   cd $route
   yarn create react-app $name
-  rm README.md
+
+  echo -e "\r\n\033[01;32mSuccessfully created! :-)"
+}
+
+createReactProjectWithTS() {
+  cd $route
+  yarn create react-app $name --template typescript
 
   echo -e "\r\n\033[01;32mSuccessfully created! :-)"
 }
