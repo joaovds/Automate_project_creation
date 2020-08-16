@@ -20,6 +20,11 @@
   This project came about when I saw the great need to be creating and configuring NodeJs and ReactJs projects all the time. The objective is that, from this script, these creations and configurations such as: Prettier, Eslint, tsconfig etc...become easier and faster to really start the job.
 </p>
 
+**Technologies 🛠**
+
+- Shell Script
+- [yarn](https://yarnpkg.com/)
+
 <h2 id="features">Features</h2>
 
 - [x] Creation of NodeJs projects (backend)
