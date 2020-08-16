@@ -50,6 +50,39 @@ $ ./script.sh
 
 <h2 id="howtouse">How to use</h2>
 
+It is very simple, just answer the questions that are asked:
+
+In the first question you must put the path to the directory where the project will be created:
+
+```sh
+$ Where do you want to create the project? (way after home): programming/study
+```
+
+Enter the project name:
+
+```sh
+What is the name of the project to be created?: nameProject
+```
+
+Confirm the project creation path
+
+```sh
+The project path will be this: "/home/user'sHomeName/programming/study/nameProject" [y/n]: y
+```
+
+Now choose the type of project you want to create and that's it! Your project will be created on the given path
+
+```sh
+|   What kind of project do you want to create?   |
+|-------------------------------------------------|
+|   1) NodeJS                                     |
+|   2) NodeJS   (TypeScript)                      |
+|   3) ReactJS                                    |
+|   4) ReactJS  (TypeScript)                      |
+|_________________________________________________|
+|--> 2
+```
+
 <h2 id="contributing">Contributing</h2>
 
 <h2 id="autor">Autor</h2>
