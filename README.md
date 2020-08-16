@@ -67,7 +67,7 @@ What is the name of the project to be created?: nameProject
 Confirm the project creation path
 
 ```sh
-The project path will be this: "/home/user'sHomeName/programming/study/nameProject" [y/n]: y
+The project path will be this: "/home/userHomeName/programming/study/nameProject" [y/n]: y
 ```
 
 Now choose the type of project you want to create and that's it! Your project will be created on the given path
