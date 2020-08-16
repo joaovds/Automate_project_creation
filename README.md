@@ -29,6 +29,11 @@
 
 <h2 id="installation">Installation</h2>
 
+### **Prerequisites**
+
+**Before you begin, you must have installed:**
+[yarn](https://yarnpkg.com/)
+
 Cloning the Repository
 
 ```sh
