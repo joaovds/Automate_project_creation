@@ -85,4 +85,16 @@ Now choose the type of project you want to create and that's it! Your project wi
 
 <h2 id="contributing">Contributing</h2>
 
+1. Fork it (<https://github.com/joaovds/Automate_project_creation.git>)
+2. Create your feature branch(`git checkout -b feature/...`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/...`)
+5. Create a new Pull Request
+
+**or**
+
+1. Go to Issues
+2. Create a new issue
+3. Say something you would like there and click on "Submit new Issue"
+
 <h2 id="autor">Autor</h2>
