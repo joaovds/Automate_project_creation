@@ -107,4 +107,15 @@ Now choose the type of project you want to create and that's it! Your project wi
 2. Create a new issue
 3. Say something you would like there and click on "Submit new Issue"
 
-<h2 id="autor">👉 Autor</h2>
+# <h2 id="autor">👉 Autor</h2>
+
+<img src="https://avatars1.githubusercontent.com/u/50719694?s=460&u=bb76946310cdf551631974d9acf4f55306a44db6&v=4" width="30%">
+
+Made by: [**João Victor**](https://github.com/joaovds)
+<a href="https://twitter.com/joaovds07">
+![Twitter](https://img.shields.io/static/v1?label=Twitter&message=@joaovds07&color=blue&style=flat&logo=twitter)
+</a>
+![E-mail](https://img.shields.io/static/v1?label=E-mail&message=jv782063@gmail.com&color=red&style=flat&logo=gmail)
+<a href="https://www.linkedin.com/in/jo%C3%A3o-victor-da-silva-a85907189/">
+![Linkedin](https://img.shields.io/static/v1?label=Linkedin&message=Jo%C3%A3o&color=darkblue&style=flat&logo=linkedin)
+</a>
